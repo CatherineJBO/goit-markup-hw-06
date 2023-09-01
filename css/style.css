@@ -707,13 +707,25 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 .label-footer {
     margin: 0;
 }
+
 @media only screen and (max-width: 767.98px) {
-   .footer-section-third {
-    max-width: 100%;
+   .footer-item {
+    width: 100%;
+   }
+   .form-input-footer {
+    width: 398px;
+   }
+    .footer-section-third {
+    width: 100%;
    }
     .label-footer {
-    max-width: 100%;
+    width: 100%;
    }
+}
+@media only screen and (max-width: 420px) {
+    .form-input-footer {
+        width: 296px;
+    }
 }
 
 /*Tablet screen*/
