@@ -1250,11 +1250,14 @@ margin-bottom: auto;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
-
-/*For mobile and tablet screen*/
-.mobile-menu-link:active {
+.mobile-menu-link.active-color {
     color: var(--ocean);
 }
+
+/*For mobile and tablet screen*/
+/* .mobile-menu-link:active {
+    color: var(--ocean);
+} */
 
 .mobile-menu-contacts-list {
     display: block;
