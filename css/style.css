@@ -311,8 +311,8 @@ img {
    }
 }
 @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)), url(../images/bkg-hero-tablet@2x.jpg);
@@ -336,8 +336,8 @@ img {
 }
 
 @media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+screen and (min-width: 1158px) and (min-resolution: 192dpi),
+screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)), url(../images/bkg-hero@2x.jpg);
@@ -638,6 +638,7 @@ img {
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+    margin-left: 76px;
 }
 /*Phone screen*/
 .footer-text {
@@ -662,9 +663,7 @@ img {
     justify-content: center;
     gap: 24px;
 }
-.label-footer {
-    margin: 0;
-}
+
 
 .form-input-footer {
     width: 264px;
@@ -699,14 +698,34 @@ img {
     gap: 16px;
     margin-top: 16px;
 }
-
+.footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+}
+.label-footer {
+    margin: 0;
+}
+@media only screen and (max-width: 767.98px) {
+   .footer-section-third {
+    max-width: 100%;
+   }
+    .label-footer {
+    max-width: 100%;
+   }
+}
 
 /*Tablet screen*/
 @media only screen and (min-width: 768px) {
+    .footer-logo {
+    margin-left: 0;
+    }
    .footer-item {
     max-width: 584px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
     row-gap: 72px;   
   }
