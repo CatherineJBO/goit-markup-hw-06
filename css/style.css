@@ -1278,6 +1278,14 @@ margin-bottom: auto;
     justify-content: start;
     align-items: center;
 }
+@media only screen and (min-width: 400px) {
+  .mobile-menu-contacts-part-1 {
+    font-size: 36px;
+  }
+  .social-icons-mobile-menu-item {
+    gap: 56px;
+  }
+}
 /* @media (hover: hover) {
     .mobile-menu-link:hover,
     .mobile-menu-link:focus {
