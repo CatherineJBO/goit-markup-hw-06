@@ -370,14 +370,16 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.benefits-list-item:not(:last-child) {
-    margin-bottom: 72px;
 
-}
 .benefits {
     padding: 96px 0;
 }
+@media only screen and (max-width: 767.98px) {
+.benefits-list-item:not(:last-child) {
+        margin-bottom: 72px;
 
+    }
+}
 /*Tablet screen*/
 @media only screen and (min-width: 768px) {
 .benefits-list {
@@ -432,10 +434,13 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 /*Examples section*/
 
 /*Phone and tablet screen*/
-@media only screen and (max-width: 1158px) {
+@media only screen and (max-width: 1157.98px) {
    .examples {
     display: none;
   }
+}
+.examples {
+    padding-bottom: 120px;
 }
 
 /*Team section*/
